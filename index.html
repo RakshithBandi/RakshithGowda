@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GTG Perfumes</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">GTG</div>
+    <nav class="nav">
+      <ul class="nav-links">
+        <li>Home</li>
+        <li>Products</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+      <div class="search-icon" id="searchIcon">🔍</div>
+    </nav>
+    <div class="search-box" id="searchBox">
+      <input type="text" placeholder="Search..." />
+    </div>
+    <div class="hamburger" id="hamburger">☰</div>
+  </header>
+<div class="conatiner">
+  <section class="product-section">
+    <div class="image-section">
+    <img src="./assets/gtg.jpg" width="300px">
+    <img src="./assets/per.jpg" width="500px">
+    </div>
+  </section>
+
+  
+  <section class="percentage-section" id="percentageSection">
+    <div class="counter" data-count="84">0%</div>
+    <div class="counter" data-count="78">0%</div>
+    <div class="counter" data-count="92">0%</div>
+  </section>
+
+  
+  <section class="testimonials">
+    
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq-section">
+    <div class="faq-item">
+      <button class="faq-question">What is GTG?</button>
+
+      <div class="faq-answer">GTG is a fragrance company...</div>
+    </div>
+    <!-- More FAQ items -->
+  </section>
+
+  <section class="product-gallery">
+  <div class="gallery-left">
+    <img id="mainImage" src="assets/gtg-img.avif" alt="Perfume" class="main-img" / width="400px">
+
+    <div class="gallery-nav">
+      <button onclick="prevImage()">←</button>
+      <button onclick="nextImage()">→</button>
+    </div>
+
+    <div class="thumbnails">
+      <img src="assets/gtg-thub1.jpg" onclick="setImage(0)" / width="300px">
+      <img src="assets/gtg-thub2.jpg" onclick="setImage(1)" / width="300px">
+      <img src="assets/gtg-thumb3.webp" onclick="setImage(2)" / width="300px">
+    </div>
+  </div>
+</section>
+
+<section class="product-options">
+  <h2>Choose Your Fragrance</h2>
+  <div>
+    <label><input type="radio" name="fragrance" value="rose" checked> Rose</label>
+    <label><input type="radio" name="fragrance" value="jasmine"> Jasmine</label>
+    <label><input type="radio" name="fragrance" value="lavender"> Lavender</label>
+  </div>
+
+  <h2>Purchase Type</h2>
+  <div>
+    <label><input type="radio" name="purchase" value="single" checked> Single</label>
+    <label><input type="radio" name="purchase" value="double"> Double</label>
+    <label><input type="radio" name="purchase" value="trial"> Try Once</label>
+  </div>
+
+  <a id="addToCart" href="https://gottago.in/collections/fragrances-perfumes-deodorants-attars-and-mists?srsltid=AfmBOopHIZXwrbauQuv8YftV-0sJDD07WAdqfZ39z1-D8kvHFl0cbXRD" class="add-cart-button">Add to Cart</a>
+</section>
+
+<section class="faq">
+  <div class="faq-item">
+    <button class="faq-question">What is GTG?</button>
+    <div class="faq-answer">GTG is a luxury perfume brand...</div>
+  </div>
+  <div class="faq-item">
+    <button class="faq-question">How long does delivery take?</button>
+    <div class="faq-answer">3-5 working days.</div>
+  </div>
+</section>
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>

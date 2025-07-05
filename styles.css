@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  line-height: 1.6;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border: 1px solid black;
+  box-shadow: 0 0 5px black;
+}
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+.search-box {
+  display: none;
+  
+}
+.search-box.active {
+  display: block;
+  
+}
+
+.product-options {
+  margin-top: 30px;
+}
+.add-cart-button {
+  display: inline-block;
+  margin-top: 20px;
+  background-color: #222;
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+.faq-answer.open {
+  max-height: 100px;
+}
+.faq-question {
+  background: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin: 10px 0;
+}
+.image-section{
+  display: flex;
+  margin-top: 5px;
+
+}
+
+button, .add-cart-button, .faq-question {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover, .faq-question:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.05);
+}
+
+.add-cart-button {
+  background-color: #222;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.add-cart-button:hover {
+  background-color: #444;
+}
+
+.thumbnails img {
+  width: 60px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.thumbnails img:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.4s ease;
+  padding: 0 0;
+}
+
+.faq-answer.open {
+  max-height: 200px; /* enough height */
+  padding: 10px 0;
+}
+
+.counter {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #e91e63;
+  transition: transform 0.3s ease;
+}
+.counter:hover {
+  transform: scale(1.1);
+}
+
+.hamburger {
+  font-size: 24px;
+  display: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.hamburger:hover {
+  color: #e91e63;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #fff;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    padding: 10px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+.conatiner{
+  align-items: center;
+  padding-left: 250px;
+}
+
+
